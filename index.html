@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Portfolio - Welcome to the Digital Realm</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Matrix Rain Background -->
+    <canvas id="matrix-rain"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="matrix-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span>MILES MALOKA</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="matrix-link">HOME</a></li>
+                <li><a href="#about" class="matrix-link">ABOUT</a></li>
+                <li><a href="#projects" class="matrix-link">PROJECTS</a></li>
+                <li><a href="#skills" class="matrix-link">SKILLS</a></li>
+                <li><a href="#contact" class="matrix-link">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <br>
+                <h1 class="matrix-title">WELCOME TO THE MATRIX</h1>
+                <p class="hero-subtitle">I am an aspiring IT professional and software engineer, crafting reality through code</p>
+                <div class="hero-description">
+                    <p>Choose your reality:</p>
+                    <div class="pill-container">
+                        <div class="pill red-pill">
+                            <span>RED PILL</span>
+                            <small>See the truth</small>
+                        </div>
+                        <div class="pill blue-pill">
+                            <span>BLUE PILL</span>
+                            <small>Stay ignorant</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <button class="matrix-btn primary" onclick="scrollToSection('about')">
+                        <span>EXPLORE</span>
+                        <i class="fas fa-arrow-down"></i>
+                    </button>
+                    <!-- <button class="matrix-btn secondary" onclick="downloadResume()">
+                        <span>DOWNLOAD CV</span>
+                        <i class="fas fa-download"></i>
+                    </button> -->
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-controls">
+                            <span class="control red"></span>
+                            <span class="control yellow"></span>
+                            <span class="control green"></span>
+                        </div>
+                        <span class="window-title">miles_maloka_portfolio.exe</span>
+                    </div>
+                    <div class="code-content">
+                        <pre><code>
+class Developer {
+    constructor() {
+        this.name = "Miles Maloka";
+        this.role = "Full Stack Developer";
+        this.skills = ["HTML", "CSS", "JavaScript", "React", "Node.js", "Python", "Java", "TypeScript"];
+    }
+    
+    code() {
+        return "Reality is just code";
+    }
+}
+
+const me = new Developer();
+console.log("seeking for an internship or junior roles");
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">ABOUT ME</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="matrix-text">
+                        I hold a BSc degree in Computer Science and Statistics and recently completed an internship as an IT Technician, where I provided end-user support, maintained systems, and resolved technical issues across various departments. During my final year of university, I led a team project where we developed a web application aimed at reducing crime and preventing suicide incidents within the university community. The goal was to provide students
+                         with a secure platform to report incidents anonymously and access mental health resources.
+                    </p>
+                    <p class="matrix-text">
+                        This experience not only sharpened my technical skills in web development but also deepened my interest in building solutions that can create meaningful social impact. I'm passionate about solving real-world problems through technology, and I’m eager
+                         to contribute to a company where innovation and customer focus are central values.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years Experience of programming</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Hardworker</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="matrix-card">
+                        <div class="card-header">
+                            <h3>Digital Identity</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="identity-item">
+                                <span class="label">Name:</span>
+                                <span class="value">Miles Maloka</span>
+                            </div>
+                            <div class="identity-item">
+                                <span class="label">Role:</span>
+                                <span class="value">Software Engineer</span>
+                            </div>
+                            <div class="identity-item">
+                                <span class="label">Location:</span>
+                                <span class="value">Digital Realm</span>
+                            </div>
+                            <div class="identity-item">
+                                <span class="label">Status:</span>
+                                <span class="value online">ONLINE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">PROJECTS</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" ><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Final Year Computer Science Project</h3>
+                        <p>I took part in a group project in computer science with ten University of Limpopo students. By utilizing technology-driven solutions, the project sought to lower crime 
+                            and prevent suicide among the university community and the surrounding Mankweng area.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://tjfieldconsultingandprojects.netlify.app/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/MilesMaloka/TJFIELD.git" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder"> 
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>TJField - StartUp</h3>
+                        <p>I was given the chance to create the first website for the startup company called TJField. To create a responsive and useful online presence that 
+                            complemented the company's vision, the project required the use of HTML, CSS, JavaScript, Bootstrap, and PHP.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://pinezoobymiles.netlify.app/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/MilesMaloka/Pine-City-Zoo-app.git" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Zoo Super App</h3>
+                        <p>Zoo Super App is a comprehensive platform designed to enhance your zoo experience. It offers features for visitors, staff, and administrators,
+                             making zoo management and exploration seamless and engaging.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://trackertimebymilesmaloka.netlify.app/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/MilesMaloka/Time_Tracker_App.git" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Mini Time Tracker App</h3>
+                        <p>A simple React + TypeScript web app that allows users to track how they spend their 
+                            time by logging tasks and the number of hours worked.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">LANGUAGES & FRAMEWORKS</h2>
+            <div class="skills-content">
+                <div class="skills-category">
+                    
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <i class=""></i>
+                       
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-java"></i></div>
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class=""></i>
+                            <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fa-solid fa-scroll"></i></div>
+                            <span class="skill-name">TypeScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">ESTABLISH CONNECTION</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>MilesMMaloka@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/miles-maloka-matsobane/" style="text-decoration: none;"><p>https://www.linkedin.com/in/miles-maloka-matsobane/</p></a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/MilesMaloka" style="text-decoration: none;"><p>https://github.com/MilesMaloka</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <button type="submit" class="matrix-btn primary">
+                            <span>SEND MESSAGE</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="matrix-footer">
+        <div class="container">
+            <p>&copy; 2018 Miles Maloka. Welcome to the digital realm.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
